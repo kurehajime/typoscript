@@ -1,4 +1,5 @@
 import * as typoscript from "./typoscript";
+import css from "./css/main.css";
 
 function main() {
     const runButton = document.querySelector("#run")
