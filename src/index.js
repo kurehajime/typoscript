@@ -1,5 +1,5 @@
-import * as typoscript from "./typoscript";
 import css from "./css/main.css";
+import * as typoscript from "./typoscript";
 
 function main() {
     const runButton = document.querySelector("#run")
