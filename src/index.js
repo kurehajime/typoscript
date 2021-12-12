@@ -1,6 +1,10 @@
 import * as typoscript from "./typoscript";
 
 function main() {
+    const runButton = document.querySelector("#run")
+    runButton.addEventListener('click', run);
+}
+function run() {
     const code = document.querySelector("#code")
     const result = document.querySelector("#result")
     let output = ""
