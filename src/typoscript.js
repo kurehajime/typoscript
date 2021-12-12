@@ -1,8 +1,13 @@
 import * as peggy from "peggy";
+import * as jspeg from "./jspeg";
 
-
-function main() {
-
+export function interpreter(code, printFunc) {
+    const parser = peggy.generate(jspeg.peg_rule)
+    const parsed = parser.parse(code)
+    const evaluter = new Evaluter()
+    const env = new Env()
+    env.print = printFunc
+    evaluter.evalute(env, parsed)
 }
 class Function {
     constructor(_name, _body, _args) {
@@ -17,6 +22,7 @@ class Env {
         this.values = {}
         this.result = null
         this.is_return = false
+        this.print = null
     }
 }
 function lvd(s1, s2) {
@@ -193,7 +199,7 @@ class Evaluter {
         })
         if (name === "p") {
             args.forEach(element => {
-                console.log(element)
+                env.print(element)
             });
             return
         }
@@ -348,5 +354,3 @@ class Evaluter {
         }
     }
 }
-
-main();
