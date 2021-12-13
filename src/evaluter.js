@@ -148,8 +148,7 @@ export class Evaluter {
             return this.evalute(env, x)
         })
         if (name in env.native_functions) {
-            env.native_functions[name](...args)
-            return
+            return env.native_functions[name](...args)
         }
         let hits = env.functions[name]
         if (hits) {

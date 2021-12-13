@@ -13,6 +13,8 @@ function run() {
         output += x + "\n"
         result.value = output
         result.scrollTop = result.scrollHeight;
+    }, (title, default_value) => {
+        return window.prompt(title, default_value)
     });
 }
 
