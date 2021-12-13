@@ -479,26 +479,25 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(153 246 228 / var(--tw-text-opacity));
 }
 
-#code{
-    background-color: black;
-    color:whitesmoke;
-}
-#result{
-    background-color: black;
-    color:whitesmoke;
-}
+
 #icon{
     width:40px;
     height:40px;
 }
+
+
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
+
+
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
+
+
 @media (min-width: 768px) {
 
   .md\:container {
@@ -545,6 +544,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: auto;
   }
 }
+
+
 @media (min-width: 1024px) {
 
   .lg\:mt-0 {

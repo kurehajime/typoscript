@@ -2,14 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-#code{
-    background-color: black;
-    color:whitesmoke;
-}
-#result{
-    background-color: black;
-    color:whitesmoke;
-}
+
 #icon{
     width:40px;
     height:40px;
