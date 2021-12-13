@@ -1,4 +1,5 @@
 import css from "./css/main.css";
+import img from './assets/typo.png';
 import * as typoscript from "./typoscript";
 
 function main() {
