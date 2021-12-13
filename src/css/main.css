@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+#code{
+    background-color: black;
+    color:whitesmoke;
+}
+#result{
+    background-color: black;
+    color:whitesmoke;
+}
