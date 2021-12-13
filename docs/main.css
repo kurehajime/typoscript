@@ -487,6 +487,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     background-color: black;
     color:whitesmoke;
 }
+#icon{
+    width:auto;
+    height:auto;
+}
 .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
