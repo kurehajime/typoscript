@@ -126,14 +126,16 @@ export class Evaluter {
         }
     }
     UpdateExpression(env, operator, argument, prefix) {
+        let name = util.fuzKey(env.values, argument.name, this.THRESHOLD)
+
         switch (operator) {
             case "++":
                 if (argument.type === 'Identifier') {
-                    return env.values[argument.name]++
+                    return env.values[name]++
                 }
             case "--":
                 if (argument.type === 'Identifier') {
-                    return env.values[argument.name]--
+                    return env.values[name]--
                 }
             default:
                 this.evalute(env, argument)
