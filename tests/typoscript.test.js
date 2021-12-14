@@ -38,7 +38,13 @@ test('function', () => {
     `)
     expect(result).toEqual("1");
 });
-
+test('lazzy var', () => {
+    let result = run(`
+    var mother = 1
+    print(other)
+    `)
+    expect(result).toEqual("1");
+});
 function run(code) {
     let output = ""
     typoscript.interpreter(code, (x) => {

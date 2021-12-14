@@ -143,7 +143,8 @@ export class Evaluter {
         let name = util.fuzKey(Object.assign({}, env.functions, env.native_functions), callee.name, this.THRESHOLD)
         let args = _arguments.map((x) => {
             if (x.type === "Identifier") {
-                return env.values[x.name]
+                let name = util.fuzKey(env.values, x.name, this.THRESHOLD)
+                return env.values[name]
             }
             return this.evalute(env, x)
         })
