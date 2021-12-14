@@ -1,4 +1,4 @@
-function lvd(s1, s2) {
+export function lvd(s1, s2) {
     if (s1 === "") { return s2.length }
     if (s2 === "") { return s1.length }
     if (s1[0] === s2[0]) { return lvd(s1.slice(1), s2.slice(1)) }
