@@ -20,7 +20,8 @@ Not allowed with syntax keywords.
 
 ### yet not supported
 
-* array
-* object
-* Variable scope
+* Array
+* Object
+* Scope of variable 
 * ES2015 or later syntax
+* and more!
