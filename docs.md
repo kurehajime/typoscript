@@ -1,6 +1,6 @@
 # TypoScript Documentation
 
-TypoScript is JavaScript with for typos.
+TypoScript is JavaScript with typos.
 Some typos in variable and function names are acceptable.
 
 ## Is it really ok?
