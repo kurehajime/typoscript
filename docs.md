@@ -25,3 +25,13 @@ Not allowed with syntax keywords.
 * Scope of variable 
 * ES2015 or later syntax
 * and more!
+
+## Native method
+
+### print(str : string) : void
+
+Outputs the string to the console.
+
+### prompt(mesage : string,default_value :object) : string
+
+Receives input from the user.
