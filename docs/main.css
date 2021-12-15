@@ -491,22 +491,31 @@ Ensure the default browser behavior of the `hidden` attribute.
 #icon{
     width:40px;
     height:40px;
+    transform: rotate(-20deg);
 }
 
-
-.hover\:bg-blue-700:hover {
+.bg_pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0fcfd;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  .Diagonal_v2 {
+    background: repeating-linear-gradient( -45deg, #d0f9ff, #d0f9ff 2px, #f4fcfd 2px, #f4fcfd 10px );
+  }
+  .hover\:bg-blue-700:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
 }
-
-
-.hover\:text-white:hover {
+  .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
-
-
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
 
   .md\:container {
     width: 100%;
@@ -552,9 +561,7 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: auto;
   }
 }
-
-
-@media (min-width: 1024px) {
+  @media (min-width: 1024px) {
 
   .lg\:mt-0 {
     margin-top: 0px;

@@ -6,4 +6,19 @@
 #icon{
     width:40px;
     height:40px;
+    transform: rotate(-20deg);
 }
+
+.bg_pattern {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f0fcfd;
+    opacity: 0.4;
+    z-index: -1;
+  }
+  .Diagonal_v2 {
+    background: repeating-linear-gradient( -45deg, #d0f9ff, #d0f9ff 2px, #f4fcfd 2px, #f4fcfd 10px );
+  }
