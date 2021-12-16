@@ -4,7 +4,6 @@ export class Env {
         this.values = {}
         this.result = null
         this.is_return = false
-        this.print = null
         this.native_functions = {}
     }
 }
