@@ -109,7 +109,7 @@ export class Evaluter {
         this.Assign(env, "=", id, this.evalute(env, init))
     }
     ArrayExpression(env, elements) {
-        elements.map((x) => {
+        return elements.map((x) => {
             return this.evalute(env, x)
         })
     }
