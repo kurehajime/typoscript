@@ -14,5 +14,6 @@ export function interpreter(code, printFunc, promptFunc) {
         _evaluter.evalute(_env, parsed)
     } catch (error) {
         printFunc(error)
+        throw error
     }
 }
