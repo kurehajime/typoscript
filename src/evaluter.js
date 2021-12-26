@@ -15,34 +15,49 @@ export class Evaluter {
     Assign(env, operator, identifier, value) {
         let op = this.evalute(env, operator)
         let name = util.fuzKey(env.values, identifier.name, this.THRESHOLD)
+        let result = env.values[name]
         switch (op) {
             case "=":
-                return env.values[name] = value
+                result = value
+                break
             case "+=":
-                return env.values[name] += value
+                result += value
+                break
             case "-=":
-                return env.values[name] -= value
+                result -= value
+                break
             case "*=":
-                return env.values[name] *= value
+                result *= value
+                break
             case "/=":
-                return env.values[name] /= value
+                result /= value
+                break
             case "%=":
-                return env.values[name] %= value
+                result %= value
+                break
             case "<<=":
-                return env.values[name] <<= value
+                result <<= value
+                break
             case ">>=":
-                return env.values[name] >>= value
+                result >>= value
+                break
             case ">>>=":
-                return env.values[name] >>>= value
+                result >>>= value
+                break
             case "|=":
-                return env.values[name] |= value
+                result |= value
+                break
             case "^=":
-                return env.values[name] ^= value
+                result ^= value
+                break
             case "&=":
-                return env.values[name] &= value
+                result &= value
+                break
             default:
                 break;
         }
+        env.values[name] = result
+        return env.values[name]
     }
 
     Program(env, body) {
