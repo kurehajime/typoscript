@@ -1,8 +1,16 @@
 version: 2
+multi-ecosystem-groups:
+  dependency-updates:
+    schedule:
+      interval: "weekly"
 updates:
   - package-ecosystem: "npm"
     directory: "/"
-    schedule:
-      interval: "weekly"
+    patterns: ["*"]
+    multi-ecosystem-group: "dependency-updates"
+    groups:
+      all-npm-security-updates:
+        applies-to: "security-updates"
+        patterns: ["*"]
     cooldown:
       default-days: 2
