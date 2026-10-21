@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "jest",
-    "build": "webpack --mode=production --node-env=production",
+    "build": "webpack --mode=production",
     "build:dev": "webpack --mode=development",
-    "build:prod": "webpack --mode=production --node-env=production",
+    "build:prod": "webpack --mode=production",
     "watch": "webpack --watch",
     "serve": "webpack serve",
     "uplib": "npx npm-check-updates -u && npm i"
@@ -24,9 +24,8 @@
   "homepage": "https://github.com/kurehajime/typoscript#readme",
   "devDependencies": {
     "@babel/core": "^8.0.1",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/plugin-transform-modules-commonjs": "^7.28.6",
-    "@babel/preset-env": "^7.22.5",
+    "@babel/plugin-transform-modules-commonjs": "^8.0.1",
+    "@babel/preset-env": "^8.0.2",
     "autoprefixer": "^10.4.14",
     "babel-loader": "^10.1.1",
     "css-loader": "^7.1.4",
@@ -38,8 +37,9 @@
     "prettier": "^3.8.1",
     "tailwindcss": "^4.3.0",
     "webpack": "^5.88.1",
-    "webpack-cli": "^7.0.2",
-    "webpack-dev-server": "^5.2.3"
+    "webpack-cli": "^7.2.3",
+    "webpack-dev-server": "^6.0.0",
+    "@tailwindcss/postcss": "^4.3.0"
   },
   "dependencies": {
     "peggy": "^5.1.0"
